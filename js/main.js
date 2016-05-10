@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+
 // Get all the keys from document
 var keys = document.querySelectorAll('#calculator span');
 var operators = ['+', '-', 'x', '÷'];
@@ -14,7 +16,7 @@ for (var i = 0; i < keys.length; i++) {
         // Now, just append the key values (btnValue) to the input string and finally use javascript's eval
         // function to get the result
         // If clear key is pressed, erase and reset everything
-        if(btnVal == 'C') {
+        if(btnVal == 'CLEAR') {
             input.innerHTML = '';
             decimalAdded = false;
         }
@@ -90,3 +92,4 @@ for (var i = 0; i < keys.length; i++) {
 
     }
 }
+});
